@@ -1,20 +1,201 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="author" content="João Victor Ribeiro">
 
-    <meta name ="description" content="Portfólio Pessoal do João Victor Ribeiro, 
+    <meta name="description" content="Portfólio Pessoal do João Victor Ribeiro, 
                 desenvolvedor Full Stack especializado em criar experiências 
                 digitais incríveis. Conheça meus projetos e entre em contato.">
-    
+
     <meta name="robots" content="index, follow">
-   <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
-    <title>Portifolio do João</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+    <title>Portfolio do João</title>
 </head>
+
 <body>
-    
+    <!--- Cabeçalho da página-->
+    <header>
+        <div class="menu-content">
+            <a hef="index.html" id="titulo">Portfólio</a>
+            <!--- Menu de navegação-->
+            <nav>
+                <ul class="menu-list">
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contatos</a></li>
+                </ul>
+
+            </nav>
+        </div>
+
+    </header>
+    <!--- Seção Principal da página-->
+    <main>
+
+        <section id="hero" class="section-container hero-container">
+
+
+            <!--- BOAS VINDAS-->
+            <article>
+                <span>👋🏼 Olá, eu sou o João</span>
+                <h1> Desenvolvedor Full Stack</h1>
+                <p> codando...</p>
+
+                <div class="buttons-container">
+                    <a href="#contact"> Entre em contato</a>
+                    <a href="#about"> Saiba mais...</a>
+                </div>
+            </article>
+
+            <!---- Imagem da Seção Hero-->
+            <figure>
+                <img src="./assets/img/foto_dev_man.svg" alt="Foto do autor do site" class="float-animation">
+            </figure>
+
+        </section>
+
+        <section id="about" class="section-container about-container">
+
+            <!--- Imagem da Seção About-->
+            <figure class="about-image">
+                <img src="./assets/img/avatar_dev_man.svg" alt="Foto perfil do autor do site" </figure>
+
+
+                <!---Conteúdo da Seção about-->
+                <article class="about-content">
+                    <h2> Sobre mim</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, expedita. Magnam labore
+                        accusantium ipsum quae velit atque ad! Saepe quibusdam, omnis debitis repudiandae id nobis! Quos
+                        recusandae ut similique facilis.</p>
+
+                    <!---Links-->
+                    <div class="about-buttons-data">
+                        <!---Links--->
+                        <div class="buttons-container">
+                            <a href="https://github.com/jvribe" target="_blank" class="botao">Github</a>
+                            <a href="#" target="_blank" class="botao-outline">Curriculo</a>
+                        </div>
+                        <!--- Dados repo GITHUB --->
+                        <div class="data-container">
+                            <!--- numero seguidores-->
+                            <div class="data-item" <span class="data-number">100</span>
+                                <span class="data-label">Seguidores</span>
+                            </div>
+                            <!--- numero repositorios publicos-->
+                            <div class="data-item" <span class="data-number">10</span>
+                                <span class="data-label">Repositórios</span>
+                            </div>
+
+                        </div>
+                </article>
+
+                <!---Projetos--->
+                <section id="projects" class="section-container projects container">
+                    <h2>Meus Projetos</h2>
+
+                    <!-- Swiper Container -->
+                    <div class="swiper projects-swiper">
+                        <div class="swiper-wrapper">
+
+                            <figure class="swiper-slide">
+
+                                <article class="project-card">
+
+                                    <!-- Ícone da Tecnologia padrão do projeto -->
+                                    <figure class="project-image">
+                                        <img src="./assets/icons/languages/github.svg" alt="Ícone do GitHub">
+                                    </figure>
+
+                                    <!-- Conteúdo do Projeto -->
+                                    <div class="project-content">
+
+                                        <h3>Projeto GitHub</h3>
+                                        <p>Projeto desenvolvido no GitHub</p>
+
+                                        <!-- Tags do Projeto -->
+                                        <div class="project-tags">
+                                            <span class="tag">GitHub</span>
+                                        </div>
+
+                                        <!-- Links do Projeto -->
+                                        <div class="project-buttons">
+                                            <a href="#" target="_blank" class="botao botao-sm">
+                                                GitHub
+                                            </a>
+                                            <a href="#" target="_blank" class="botao-outline botao-sm">
+                                                Deploy
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                </article>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Botões de Navegação -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+                    <!-- Paginação -->
+                    <div class="swiper-pagination"></div>
+
+                    </div>
+                </section>
+                <!---Seção de contato--->
+                <section id="contact" class="section-container contact-container">
+                    <!---Redes Sociais--->
+                    <article class="contact-info">
+                        <h2>Entre em contato</h2>
+                        <p>minhas redes</p>
+                        <!---Links paras as redes--->
+                        <div class="social-container">
+                        <a href="https://github.com/jvribe" target="blank" class="social-icon" aria-label="Github">
+                            <img
+                            src="./assets/icons/social/github.svg"
+                            alt="Link para o GitHub"
+                            >
+                        </a>
+                        </div>
+                         <div class="social-container">
+                        <a href="https://linkedin.com/in/ribeirojv" target="blank" class="social-icon" aria-label="Linkedin">
+                            <img
+                            src="./assets/icons/social/linkedin.svg"
+                            alt="Link para o LinkedIn"
+                            >
+                        </a>
+                        </div>
+                    </article>
+
+                    <!---Formulario Contato-->
+                    <form id="formulario" action="#" method="post" class="contact-form">
+                        <div class="form-field">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="botao">Enviar mensagem</button>
+                    </form>
+                </section>
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
+
 </html>
