@@ -2,7 +2,14 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
+    <!-- Fontes do Google -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+  <!-- Fonte do Google - Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+   
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="author" content="João Victor Ribeiro">
@@ -13,6 +20,9 @@
 
     <meta name="robots" content="index, follow">
     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+   
+   <!---Css principal --->
+   <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Portfolio do João</title>
 </head>
 
@@ -20,7 +30,7 @@
     <!--- Cabeçalho da página-->
     <header>
         <div class="menu-content">
-            <a hef="index.html" id="titulo">Portfólio</a>
+            <a href="index.html" id="titulo">Portfólio</a>
             <!--- Menu de navegação-->
             <nav>
                 <ul class="menu-list">
@@ -47,13 +57,13 @@
                 <p> codando...</p>
 
                 <div class="buttons-container">
-                    <a href="#contact"> Entre em contato</a>
-                    <a href="#about"> Saiba mais...</a>
+                    <a href="#contact" class="botao"> Entre em contato</a>
+                    <a href="#about" class="botao-outline"> Saiba mais...</a>
                 </div>
             </article>
 
             <!---- Imagem da Seção Hero-->
-            <figure>
+            <figure class="hero-image">
                 <img src="./assets/img/foto_dev_man.svg" alt="Foto do autor do site" class="float-animation">
             </figure>
 
@@ -63,7 +73,8 @@
 
             <!--- Imagem da Seção About-->
             <figure class="about-image">
-                <img src="./assets/img/avatar_dev_man.svg" alt="Foto perfil do autor do site" </figure>
+                <img src="./assets/img/avatar_dev_man.svg" alt="Foto perfil do autor do site">
+            </figure>
 
 
                 <!---Conteúdo da Seção about-->
@@ -76,24 +87,24 @@
                     <!---Links-->
                     <div class="about-buttons-data">
                         <!---Links--->
-                        <div class="buttons-container">
+                        <div class="buttons-container" >
                             <a href="https://github.com/jvribe" target="_blank" class="botao">Github</a>
                             <a href="#" target="_blank" class="botao-outline">Curriculo</a>
                         </div>
                         <!--- Dados repo GITHUB --->
                         <div class="data-container">
                             <!--- numero seguidores-->
-                            <div class="data-item" <span class="data-number">100</span>
+                            <div class="data-item"> <span class="data-number">100</span>
                                 <span class="data-label">Seguidores</span>
                             </div>
                             <!--- numero repositorios publicos-->
-                            <div class="data-item" <span class="data-number">10</span>
+                            <div class="data-item"> <span class="data-number">10</span>
                                 <span class="data-label">Repositórios</span>
                             </div>
 
                         </div>
                 </article>
-
+</section>
                 <!---Projetos--->
                 <section id="projects" class="section-container projects container">
                     <h2>Meus Projetos</h2>
@@ -102,7 +113,7 @@
                     <div class="swiper projects-swiper">
                         <div class="swiper-wrapper">
 
-                            <div class="swiper-slide">
+                            <figure class="swiper-slide"> </figure>
 
                                 <article class="project-card">
 
@@ -150,7 +161,7 @@
                     </div>
                 </section>
                 <!---Seção de contato--->
-                <section id="contact" class="section-container contact-container">
+                <section id="contacts" class="section-container contact-container">
                     <!---Redes Sociais--->
                     <article class="contact-info">
                         <h2>Entre em contato</h2>
@@ -160,11 +171,15 @@
                             <a href="https://github.com/jvribe" target="blank" class="social-icon" aria-label="Github">
                                 <img src="./assets/icons/social/github.svg" alt="Link para o GitHub">
                             </a>
-                        </div>
                         <div class="social-container">
                             <a href="https://linkedin.com/in/ribeirojv" target="blank" class="social-icon"
                                 aria-label="Linkedin">
                                 <img src="./assets/icons/social/linkedin.svg" alt="Link para o LinkedIn">
+                            </a>
+                            <div class="social-container">
+                            <a href="https://instagram.com/" target="blank" class="social-icon"
+                                aria-label="Linkedin">
+                                <img src="./assets/icons/social/instagram.svg" alt="Link para o Instagram">
                             </a>
                         </div>
                     </article>
@@ -191,7 +206,6 @@
 
     <footer>
         Desenvolvido por João Victor Ribeiro - 2026
-    </footer>
     </footer>
 </body>
 
