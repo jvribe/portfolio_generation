@@ -709,9 +709,7 @@ footer {
         font-size: var(--text-lg);
     }
 
-    #titulo  {
-        font-size: var(--text-xl);
-    }
+    #titulo  { font-size: var(--text-xl); }
 @media screen and (max-width: 768px) {
     .menu-list {
         display: none;
@@ -732,6 +730,12 @@ footer {
 
 .hero-image img {
     object-fit: cover;
+}
+
+.hero-container .buttons-container {
+    margin-top: var(--spacing-md);
+    justify-content: center;
+    width: 100%;
 }
 .hero-container .botao,
 .hero-container .botao-outline {
@@ -764,6 +768,10 @@ footer {
     width: 100%;
 }
 
+.about-content .buttons-container {
+    justify-content: center;
+    width: 100%;
+}
 .about-buttons-data {
     flex-direction: column;
     gap: var(--spacing-md);
@@ -857,4 +865,162 @@ footer {
 
 /*Reponsividade Celular*/
 @media screen and (max-width: 480px) {
+    /* Ajuste geral de espaçamentos da página */
+    .section-container {
+        padding: var(--spacing-md) var(--spacing-xs);
+    }
+
+    /* --- HERO --- */
+    .hero-container {
+        min-height: auto;
+        padding-top: var(--spacing-lg);
+        gap: var(--spacing-md);
+    }
+
+    .hero-content h1 {
+        font-size: var(--text-2xl); /* Reduz o título principal */
+    }
+
+    .hero-content span {
+        font-size: var(--text-base);
+    }
+
+    .hero-content p {
+        font-size: var(--text-base); /* Texto do parágrafo ajustado */
+    }
+
+    .hero-image img {
+        max-width: 14rem; /* Controla o tamanho da imagem no topo */
+    }
+
+    /* Botões empilhados em celulares pequenos */
+    .buttons-container {
+        flex-direction: column;
+        width: 100%;
+        gap: var(--spacing-xs);
+    }
+
+    .buttons-container .botao,
+    .buttons-container .botao-outline {
+        width: 100%;
+        padding: 0.625rem 1rem;
+        font-size: var(--text-sm);
+    }
+
+    /* --- ABOUT --- */
+    .about-container {
+        margin: 0;
+        gap: var(--spacing-md);
+    }
+
+    .about-image img {
+        max-width: 12rem; /* Imagem de perfil menor */
+    }
+
+    .about-content h2 {
+        font-size: var(--text-2xl);
+    }
+
+    .about-content p {
+        font-size: var(--text-base);
+    }
+
+    /* Estatísticas do GitHub no About */
+    .data-container {
+        gap: var(--spacing-md);
+    }
+
+    .data-number {
+        font-size: var(--text-xl);
+    }
+
+    .data-label {
+        font-size: var(--text-sm);
+    }
+
+    /* --- PROJECTS --- */
+    .projects-container {
+        margin: var(--spacing-md) 0;
+    }
+
+    .projects-container h2 {
+        font-size: var(--text-2xl);
+    }
+
+    .projects-swiper {
+        padding: var(--spacing-xs) 0 var(--spacing-xl);
+    }
+
+    .project-card {
+        height: auto;
+        min-height: 26rem;
+        max-height: none;
+    }
+
+    .project-image {
+        height: 8rem; /* Altura da imagem do projeto reduzida */
+    }
+
+    .project-image img {
+        max-width: 5rem;
+        max-height: 5rem;
+    }
+
+    .project-content {
+        padding: var(--spacing-sm);
+    }
+
+    .project-content h3 {
+        font-size: var(--text-base);
+    }
+
+    .project-content p {
+        font-size: var(--text-sm);
+    }
+
+    /* --- CONTACT --- */
+    .contact-info h2 {
+        font-size: var(--text-2xl);
+    }
+
+    .contact-info p {
+        font-size: var(--text-base);
+    }
+
+    .social-container {
+        gap: var(--spacing-sm);
+    }
+
+    .social-icon {
+        width: 3.25rem;
+        height: 3.25rem;
+        padding: 0.5rem;
+    }
+
+    form input,
+    form textarea {
+        font-size: var(--text-sm);
+        padding: 0.5rem;
+    }
+
+    /* --- SUCCESS PAGE --- */
+    .success-container {
+        padding: var(--spacing-md) var(--spacing-xs);
+    }
+
+    .success-content {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    .success-icon img {
+        width: 4.5rem;
+    }
+
+    .success-content h1 {
+        font-size: var(--text-xl);
+    }
+
+    .success-content h2 {
+        font-size: var(--text-sm);
+    }
 }
