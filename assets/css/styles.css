@@ -303,6 +303,7 @@ header a:hover {
     font-size: var(--text-lg);
     color: var(--gray-400);
     text-align: justify; /* Alinha o texto nas duas margens */
+    margin-right: 5rem;
 }
 
 /* Container de Botões + Estatísticas */

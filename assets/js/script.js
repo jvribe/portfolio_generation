@@ -19,11 +19,10 @@ async function getAboutGithub() {
                 </figure>
                 <article class="about-content">
                     <h2>Sobre mim</h2>
-                    <p>Sempre fui fascinado por tecnologia e negócios, unindo minha bagagem em contabilidade com a paixão por entender como as coisas 
-                    funcionam. Em 2026, decidi ir além e mergulhei de cabeça na área tech, iniciando a faculdade de Engenharia de Software e o bootcamp da Generation Brasil. 
-                    Comecei minha jornada no desenvolvimento web com HTML, CSS, JavaScript e Python, e logo avancei para aplicações completas. Hoje foco meu aprendizado no backend, 
-                    trabalhando com Java, Spring Boot, APIs REST e bancos de dados. Meu objetivo é aplicar essa visão técnica e analítica para construir soluções eficientes, 
-                    automatizar processos e resolver problemas reais.</p>
+                    <p>Sempre fui fascinado por negócios e tecnologia, uni minha bagagem em contabilidade ao universo tech. 
+                    Em 2026, mergulhei na área iniciando a faculdade de Engenharia de Software e o bootcamp da Generation Brasil. 
+                    Após aprender HTML, CSS, JavaScript e Python, hoje foco no backend com Java, Spring Boot, APIs REST e bancos de dados. 
+                    Meu objetivo é usar essa visão analítica para construir sistemas eficientes que automatizem processos e resolvam problemas reais..</p>
                     <div class="about-buttons-data">
                         <div class="buttons-container">
                             <a href="${perfil.html_url}" target="_blank" class="botao">Github</a>
