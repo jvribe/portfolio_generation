@@ -298,6 +298,12 @@ header a:hover {
     font-weight: 700;
     color: var(--purple-900);
 }
+/* Justifica o texto da seção Sobre mim */
+.about-content p {
+    font-size: var(--text-lg);
+    color: var(--gray-400);
+    text-align: justify; /* Alinha o texto nas duas margens */
+}
 
 /* Container de Botões + Estatísticas */
 .about-buttons-data {
